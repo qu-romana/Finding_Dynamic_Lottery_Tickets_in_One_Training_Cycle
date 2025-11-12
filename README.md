@@ -174,48 +174,6 @@ Our approach uses a simple yet effective three-step process at each training epo
 
 ---
 
-## 🚀 Quick Start
-
-### Running Experiments
-
-All experiments are available as Jupyter notebooks in the `experiments/` directory.
-
-#### 1. ResNet-18 on CIFAR-10
-
-```bash
-# Run different sparsity levels
-jupyter notebook experiments/ResNet18_Cifar10_sparsity_72.9_multipleSeeds.ipynb
-jupyter notebook experiments/Resnet18_Sparsity80%_with_multiple_Seeds_cifar10_Code.ipynb
-jupyter notebook experiments/Resnet18_sparsity90_cifar10_multipleSeeds.ipynb
-```
-
-#### 2. VGG Experiments
-
-```bash
-# VGG-like @ 97% sparsity (SNIP comparison)
-jupyter notebook experiments/VGG_like_Sparsity97_Cifar10.ipynb
-
-# VGG-19 @ 98% sparsity (GraSP comparison)
-jupyter notebook experiments/VGG19_Sparsity98_Cifar10.ipynb
-```
-
-#### 3. LeNet on MNIST
-
-```bash
-# LeNet @ 78.9% and 98% sparsity
-jupyter notebook experiments/LeNet_300_100_78.9%Sparsity.ipynb
-jupyter notebook experiments/LeNet_300100_98Sparsity.ipynb
-```
-
-#### 4. Sparsity-Accuracy Analysis
-
-```bash
-# Generate sparsity vs accuracy trade-off plots
-jupyter notebook experiments/sparsity_accuracy_TradeOff.ipynb
-```
-
----
-
 ## 📁 Repository Structure
 
 ```
@@ -334,24 +292,6 @@ All ResNet-18 experiments run with **5 random seeds** (42, 123, 456, 789, 999) f
 
 **Optimal Range:** 70-85% sparsity maintains accuracy within 0.1pp of dense baseline
 
----
-
-## 🛠️ Requirements
-
-```txt
-torch>=1.12.0
-torchvision>=0.13.0
-numpy>=1.21.0
-matplotlib>=3.5.0
-seaborn>=0.11.0
-jupyter>=1.0.0
-tqdm>=4.62.0
-```
-
-Install all dependencies:
-```bash
-pip install -r requirements.txt
-```
 
 ---
 
